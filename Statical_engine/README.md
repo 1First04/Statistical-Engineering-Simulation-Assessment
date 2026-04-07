@@ -78,7 +78,30 @@ from stat_engine import StatEngine
 
 This project uses Python’s built-in `unittest` framework.
 
+▶️ Run All Tests
+python -m unittest discover tests
 
+Or directly:
+
+python tests/test_stat_engine.py
+
+## ✅ Acceptance Criteria Checklist
+Requirement	Status
+✔ Computes Mean correctly	
+✔ Computes Median (Odd & Even)	
+✔ Handles Multimodal distributions	
+✔ Returns message for no mode	
+✔ Implements Sample Variance (n-1)	
+✔ Implements Population Variance (n)	
+✔ Computes Standard Deviation correctly	
+✔ Detects outliers using Z-score	
+✔ Handles empty dataset gracefully	
+✔ Cleans mixed data types (e.g., strings, None)	
+✔ Monte Carlo simulation implemented	
+✔ Law of Large Numbers demonstrated	
+✔ Unit tests validate correctness	
+
+<img width="896" height="374" alt="image" src="https://github.com/user-attachments/assets/6f9e3191-9c36-41c9-9911-c7f3cd202a8f" />
 
 
 ---

@@ -1,24 +1,14 @@
-import json
-import random
-
-random.seed(42)
-
-sample_salaries = []
-
-# Low salaries (interns / junior)
-sample_salaries += [random.randint(300, 1500) for _ in range(10)]
-
-# Mid-level salaries (normal employees)
-sample_salaries += [random.randint(2000, 8000) for _ in range(25)]
-
-# High salaries (senior / executives)
-sample_salaries += [random.randint(10000, 50000) for _ in range(10)]
-
-# Extreme outliers (founders / equity-heavy roles)
-sample_salaries += [100000, 150000, 250000, 500000, 1000000]
-
-# Save to JSON
-with open("sample_salaries.json", "w") as f:
-    json.dump(sample_salaries, f, indent=4)
-
-print(" sample_salaries.json created with 50 entries")
+{
+  "sample_salaries": [
+    18000, 22000, 25000, 27000, 30000,
+    32000, 35000, 37000, 40000, 42000,
+    45000, 47000, 50000, 52000, 55000,
+    58000, 60000, 62000, 65000, 68000,
+    70000, 72000, 75000, 78000, 80000,
+    82000, 85000, 88000, 90000, 95000,
+    100000, 110000, 120000, 130000, 150000,
+    180000, 200000, 220000, 250000, 300000,
+    500000, 750000, 1000000, 1500000, 2000000,
+    3000000, 5000000, 7000000, 10000000, 15000000
+  ]
+}

@@ -1,1 +1,24 @@
-# Statistical-Engineering-Simulation-Assessment
+import json
+import random
+
+random.seed(42)
+
+sample_salaries = []
+
+# Low salaries (interns / junior)
+sample_salaries += [random.randint(300, 1500) for _ in range(10)]
+
+# Mid-level salaries (normal employees)
+sample_salaries += [random.randint(2000, 8000) for _ in range(25)]
+
+# High salaries (senior / executives)
+sample_salaries += [random.randint(10000, 50000) for _ in range(10)]
+
+# Extreme outliers (founders / equity-heavy roles)
+sample_salaries += [100000, 150000, 250000, 500000, 1000000]
+
+# Save to JSON
+with open("sample_salaries.json", "w") as f:
+    json.dump(sample_salaries, f, indent=4)
+
+print(" sample_salaries.json created with 50 entries")

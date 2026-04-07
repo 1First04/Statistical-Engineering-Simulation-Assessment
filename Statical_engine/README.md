@@ -46,7 +46,7 @@ The project implements both **Population Variance** and **Sample Variance**:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/statistical-engine.git
+git clone https://github.com/1First04/Statistical-Engineering-Simulation-Assessment/tree/main
 cd statistical-engine
 ```
 
